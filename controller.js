@@ -8,10 +8,42 @@ function getContact(req, res) {
   const id = req.params.id;
   const contact = contacts.find((c) => c.id === id);
   if (contact === undefined) {
-    res.status(200).json("Contact not found");
+    res.status(404).send();
   } else {
     res.status(200).json(contact);
   }
 }
 
-export { getContacts, getContact };
+function addContact(req, res) {
+  const newContact = {
+    id: req.body.id,
+    name: req.body.name,
+    phone: req.body.phone,
+  };
+  contacts.push(newContact);
+  console.log(contacts);
+  res.status(200).json(newContact);
+}
+
+function updateContact(req, res) {
+  const updateContact = req.body;
+  const idx = contacts.findIndex((contact) => contact.id == req.params.id);
+  if (idx >= 0) {
+    contacts[idx] = updateContact;
+    res.send(updateContact);
+  } else {
+    res.status(404).send();
+  }
+}
+
+function deletedContact(req, res) {
+  const idx = contacts.findIndex((contact) => contact.id == req.params.id);
+  if (idx >= 0) {
+    const deletedContact = contacts.splice(idx, 1);
+    res.send(deletedContact);
+  } else {
+    res.status(404).send();
+  }
+}
+
+export { getContacts, getContact, addContact, updateContact, deletedContact };

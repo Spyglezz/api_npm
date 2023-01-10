@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1673251844431" clover="3.2.0">
-  <project timestamp="1673251844431" name="All files">
-    <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0" elements="10" coveredelements="6" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+<coverage generated="1673346114087" clover="3.2.0">
+  <project timestamp="1673346114087" name="All files">
+    <metrics statements="30" coveredstatements="9" conditionals="6" coveredconditionals="0" methods="9" coveredmethods="0" elements="45" coveredelements="9" complexity="0" loc="30" ncloc="30" packages="1" files="3" classes="3"/>
     <file name="app.js" path="C:\Users\dpensibi\OneDrive - Capgemini\Desktop\Cours Epsi\04-JS\coursjs\npm\app.js">
-      <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
+      <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
-      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
-      <line num="19" count="0" type="stmt"/>
-      <line num="22" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+    </file>
+    <file name="controller.js" path="C:\Users\dpensibi\OneDrive - Capgemini\Desktop\Cours Epsi\04-JS\coursjs\npm\controller.js">
+      <metrics statements="20" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="0"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="41" count="0" type="stmt"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="44" count="0" type="stmt"/>
+    </file>
+    <file name="data.js" path="C:\Users\dpensibi\OneDrive - Capgemini\Desktop\Cours Epsi\04-JS\coursjs\npm\data.js">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
