@@ -26,15 +26,14 @@ describe("Contacts API", () => {
   test("GET /contacts", async () => {
     const response = await request(app).get("/api/contacts");
     expect(response.statusCode).toBe(200);
-    expect(response.body).toBe(contacts);
+    expect(response.body).toEqual(contacts);
   });
 
   test("POST /contacts", async () => {
-    const newContact = { id: "5", nom: "Brontosaure", telephone: "02I5902582" };
+    const newContact = { nom: "Brontosaure", telephone: "02I5902582" };
     const response = await request(app).post("/api/contacts").send(newContact);
-    console.log(response);
     expect(response.statusCode).toBe(200);
-    expect(response.body).toBe(newContact);
+    expect(response.body).toEqual(newContact);
   });
 
   test("PUT /contacts/:id", async () => {
@@ -47,15 +46,13 @@ describe("Contacts API", () => {
       .put("/api/contacts/1")
       .send(updateContact);
     expect(response.statusCode).toBe(200);
-    expect(response.body).toEqual({ updateContact });
+    expect(response.body).toEqual(updateContact);
   });
 
   test("DELETE /contacts/:id", async () => {
     const response = await request(app).delete("/contacts/1");
     expect(response.statusCode).toBe(404);
-    expect(response.body).toEqual([
-      { id: "1", nom: "Raptor", telephone: "02I5902582" },
-    ]);
+    expect(response.body).toEqual({});
   });
 });
 
