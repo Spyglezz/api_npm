@@ -16,12 +16,10 @@ function getContact(req, res) {
 
 function addContact(req, res) {
   const newContact = {
-    id: req.body.id,
-    name: req.body.name,
-    phone: req.body.phone,
+    nom: req.body.nom,
+    telephone: req.body.telephone,
   };
   contacts.push(newContact);
-  console.log(contacts);
   res.status(200).json(newContact);
 }
 
